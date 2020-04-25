@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+}
+.menu{
+    margin:  auto;
+    height: 450px;
+    width: 55%;
+    
+}
+.level{
+    text-align: center;
+    color: white;
+    font-family: comic sans ms;
+    font-size: 50px;
+}
+.header-container{
+    margin: 10px auto 50px;
+    text-align: center;
+
+}
+.header{
+    font-size: 50px;
+    font-family: comic sans ms;
+}
+.description-text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.text{
+    font-family: comic sans ms;
+    font-size: 30px;
+}
+.easy{
+    height: 150px;
+    margin-bottom: 50px;
+}
+.easy-btn{
+    font-family: comic sans ms;
+    width: 100%;
+    height: 150px;
+    font-size: 50px;
+    color: white;
+    background: linear-gradient(to right, #790911, #00d4ff);
+    border-radius: 12px;
+    box-shadow: none;
+}
+.easy-btn:hover {
+    color: black;
+    background: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+}
+.normal{
+    
+    height: 150px;
+    margin-bottom: 50px;
+    
+}
+.normal-btn{
+    font-family: comic sans ms;
+    width: 100%;
+    height: 150px;
+    font-size: 50px;
+    color: white;
+    background: linear-gradient(to right,#24000d, #d7f906 );
+    border-radius: 12px;
+    box-shadow: none;
+}
+.normal-btn:hover {
+    color: black;
+    background: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+}
+.hard{
+    height: 150px; 
+}
+.hard-btn{
+    font-family: comic sans ms;
+    width: 100%;
+    height: 150px;
+    font-size: 50px;
+    color: white;
+    background: linear-gradient(to right, #2111d5, #06f91e);
+    border-radius: 12px;
+    box-shadow: none;
+}
+.hard-btn:hover {
+    color: black;
+    background: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+}
