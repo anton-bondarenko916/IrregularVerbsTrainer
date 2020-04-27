@@ -1,6 +1,8 @@
 *{
     margin: 0;
 }
+
+/* Index.html */
 .menu{
     margin:  auto;
     height: 450px;
@@ -86,6 +88,92 @@
     box-shadow: none;
 }
 .hard-btn:hover {
+    color: black;
+    background: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+}
+
+
+
+
+
+/* Easy.html */
+
+.header-easy{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header-easy-text{
+    font-family: comic sans ms;
+    font-size: 50px;
+}
+
+
+/* input 2nd form */
+
+.input-form-2-box{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.input-2-form{
+    width: 55%;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    font-family: comic sans ms;
+    margin-top: 10px;
+}
+
+.input-2-form-header{
+    font-family: comic sans ms;
+    font-size: 40px;
+}
+
+
+/* input 3rd form */
+
+.input-form-3-box{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.input-3-form{
+    width: 55%;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    font-family: comic sans ms;
+    margin-top: 10px;
+}
+
+.input-3-form-header{
+    font-family: comic sans ms;
+    font-size: 40px;
+}
+
+/* button 'back to menu' */
+
+.btn-back-box{
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+
+.btn-back{
+    width: 100%;
+    height: 50px;
+    background-color: crimson;
+    box-shadow: none;
+    font-family: comic sans ms;
+    color: white;
+    font-size: 30px;
+    border-radius: 12px;
+}
+
+.btn-back:hover {
     color: black;
     background: white;
     border: 2px solid black;
