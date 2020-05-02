@@ -100,6 +100,8 @@
 
 /* Easy.html */
 
+
+/* header */
 .header-easy{
     text-align: center;
     margin-top: 10px;
@@ -111,10 +113,38 @@
 }
 
 
+/*description */
+
+.description-easy-box{
+    margin: 20px auto;
+    text-align: center;
+    width: 55%;
+}
+
+.description-easy-text{
+    font-family: comic sans ms;
+    font-size: 20px;
+}
+
+/*easy-verb */
+
+.verb-easy-box{
+    text-align: center;
+    width: 55%;
+    margin: 20px auto;
+    font-family: comic sans ms;
+}
+
+.easy-verb{
+    font-family: comic sans ms;
+    font-size: 20px;
+}
+
+
 /* input 2nd form */
 
 .input-form-2-box{
-    margin: 50px auto;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -154,6 +184,8 @@
     font-size: 40px;
 }
 
+
+/* buttons */
 /* button 'back to menu' */
 
 .btn-back-box{
@@ -171,9 +203,36 @@
     color: white;
     font-size: 30px;
     border-radius: 12px;
+    text-align: center;
 }
 
 .btn-back:hover {
+    color: black;
+    background: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+}
+
+/* button check */
+.btn-check-box{
+    width: 55%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.btn-check{
+    width: 100%;
+    height: 50px;
+    background-color: LIMEGREEN;
+    box-shadow: none;
+    font-family: comic sans ms;
+    color: white;
+    font-size: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.btn-check:hover {
     color: black;
     background: white;
     border: 2px solid black;
