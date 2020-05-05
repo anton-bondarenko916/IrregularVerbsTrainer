@@ -20,13 +20,9 @@ let verbs_3_form = [
     'bound']
 
 
-function getRandomArbitary(min, max)
-{
-    return Math.random()*(max-min)+min;
-}
-
-
 jQuery('document').ready(function(){
+    var right_answers = 0;
+    var question_num = 0;
     var n = 5;
     var i = 0;
     var control = 0;
@@ -34,13 +30,18 @@ jQuery('document').ready(function(){
     var p = document.getElementsByClassName('easy-verb')[0];
     p.innerHTML = word1;
 
-    jQuery('#btn-check-id').on('click',function(){
+    $('#btn-check-id').on('click',function(){
         var second_form, third_form;
         
-        second_form = jQuery('#input-2-form-id').val();
-        third_form = jQuery('#input-3-form-id').val();
+        
+        second_form = $('#input-2-form-id').val();
+        second_form = $.trim(second_form);
+        third_form = $('#input-3-form-id').val();
+        third_form = $.trim(third_form);
         if (second_form == verbs_2_form[i] && third_form == verbs_3_form[i]){
-            alert("Успех!");
+            right_answers ++;
+            question_num ++;
+            swal("Good job!", " ", "success");
             jQuery('#input-2-form-id').val('');
             jQuery('#input-3-form-id').val('');
             i++;
@@ -53,10 +54,13 @@ jQuery('document').ready(function(){
             }
         } else if (second_form != verbs_2_form[i] || third_form != verbs_3_form[i]){
             control ++;
-            alert('Ошибка! Поробуйте еще раз. \n Осталось попыток: ' + (3 - control) );
+            swal("Wrong!", `Осталось попыток: ${3-control}`, "warning");
             
             if (control == 3){
-                alert("Вы не справились с данным глаголом");
+                question_num ++;
+                jQuery('#input-2-form-id').val('');
+                jQuery('#input-3-form-id').val('');
+                swal("Bad!","Вы не справились с данным глаголом", "error");
                 control = 0;
                 i++;
                 word1 = verbs_1_form[i];
@@ -67,6 +71,27 @@ jQuery('document').ready(function(){
                 }
             } 
         }
+        
+    })
+
+    jQuery('#btn-back-id').on('click',function(){
+        var mark;
+        mark = right_answers / question_num;
+        mark = (mark*10)/2;
+        mark = Math.round(mark);
+        if (mark >= 4)
+        {
+            swal("Good!", `Ваша оценка: ${mark}`, "success");
+            setTimeout(function(){document.location.href = "index.html";},2000);
+        } else if (mark < 4 && mark == 3)
+        {
+            swal("Could be better", `Вашя оценка: ${mark}`, "warning");
+            setTimeout(function(){document.location.href = "index.html";},2000);
+        } else if (mark < 3)
+        {
+            swal("Very bad!", `Вашя оценка: ${mark}`, "error");
+            setTimeout(function(){document.location.href = "index.html";},2000);
+        } else document.location.href = "index.html";
     })
     
 
