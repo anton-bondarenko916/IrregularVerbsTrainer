@@ -137,7 +137,8 @@
 
 .easy-verb{
     font-family: comic sans ms;
-    font-size: 20px;
+    font-size: 30px;
+    font-style: italic;
 }
 
 
@@ -162,6 +163,13 @@
     font-size: 40px;
 }
 
+/* good-image */
+
+.good{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
 
 /* input 3rd form */
 
