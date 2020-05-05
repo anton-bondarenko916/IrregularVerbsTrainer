@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eesy Level</title>
+    <link rel="shortcut icon" href="https://yt3.ggpht.com/a/AGF-l7-SDscqTsCAiN4OspPe3_OtjiLEeHsT7VsIiA=s900-c-k-c0xffffffff-no-rj-mo" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script
         src="https://code.jquery.com/jquery-3.5.0.js"
         integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
         crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -18,25 +20,29 @@
     </div>
     <div class="description-easy-box">
         <p class="description-easy-text">
-            Здесь будет описание уровня
+            На данном уровне вам будут встречаться самые частоиспользуемые неправильные глаголы, также вам могут встретиться глаголы с одинаковыми формами. 
+            Вам необходимо записать вторую и третью формы глаголов в соответсвующие им поля. 
         </p>
     </div>
     <div class="verb-easy-box" id="verb">
+        <h1>Verb:</h1>
         <h1 class="easy-verb" ></h1>
     </div>
     <div class="input-form-2-box">
         <h1 class="input-2-form-header">Enter 2nd form</h1>
         <input type="text" class="input-2-form" id="input-2-form-id">
-    </div>
     <div class="input-form-3-box">
         <h1 class="input-3-form-header">Enter 3rd form</h1>
         <input type="text" class="input-3-form" id="input-3-form-id">
     </div>
+    <div class="answer-box">
+
+    </div>
     <div class="btn-check-box">
-        <button class="btn-check" id="btn-check-id">check</button>
+        <button class="btn-check" id="btn-check-id">Check</button>
     </div>
     <div class="btn-back-box">
-        <button onclick="location.href='index.html'" class="btn-back" id="btn-back-id">Back to menu</button>
+        <button  class="btn-back" id="btn-back-id">Back to menu</button>
     </div>
     
 </body>
