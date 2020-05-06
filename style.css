@@ -108,7 +108,7 @@
 }
 
 .header-easy-text{
-    font-family: comic sans ms;
+    font-family: 'Lato' sans ms;
     font-size: 50px;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .description-easy-text{
-    font-family: comic sans ms;
+    font-family: 'Lato' sans ms;
     font-size: 20px;
 }
 
@@ -132,11 +132,11 @@
     text-align: center;
     width: 55%;
     margin: 20px auto;
-    font-family: comic sans ms;
+    font-family: 'Lato' sans ms;
 }
 
 .easy-verb{
-    font-family: comic sans ms;
+    font-family: 'Lato' sans ms;
     font-size: 30px;
     font-style: italic;
 }
@@ -154,12 +154,12 @@
     height: 50px;
     font-size: 30px;
     text-align: center;
-    font-family: comic sans ms;
+    font-family: 'Lato' sans ms;
     margin-top: 10px;
 }
 
 .input-2-form-header{
-    font-family: comic sans ms;
+    font-family: 'Lato' sans ms;
     font-size: 40px;
 }
 
@@ -183,12 +183,12 @@
     height: 50px;
     font-size: 30px;
     text-align: center;
-    font-family: comic sans ms;
+    font-family: 'Lato' sans ms;
     margin-top: 10px;
 }
 
 .input-3-form-header{
-    font-family: comic sans ms;
+    font-family: 'Lato' sans ms;
     font-size: 40px;
 }
 
@@ -207,7 +207,7 @@
     height: 50px;
     background-color: crimson;
     box-shadow: none;
-    font-family: comic sans ms;
+    font-family: 'Lato' sans ms;
     color: white;
     font-size: 30px;
     border-radius: 12px;
@@ -233,7 +233,7 @@
     height: 50px;
     background-color: LIMEGREEN;
     box-shadow: none;
-    font-family: comic sans ms;
+    font-family: 'Lato' sans ms;
     color: white;
     font-size: 30px;
     border-radius: 12px;
