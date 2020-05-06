@@ -3,21 +3,66 @@ let verbs_1_form = [
     'become',
     'begin',
     'bend',
-    'bind'];
+    'bind',
+    'break',
+    'buy',
+    'come',
+    'cost',
+    'cut',
+    'do',
+    'drink',
+    'drive',
+    'eat',
+    'fall',
+    'feed',
+    'take',
+    'say',
+    'put',
+    'tell'];
 
 let verbs_2_form = [
     'beat',
     'became',
     'began',
     'bent',
-    'bound'];
+    'bound',
+    'broke',
+    'bought',
+    'came',
+    'cost',
+    'cut',
+    'did',
+    'drank',
+    'drove',
+    'ate',
+    'fell',
+    'fed',
+    'took',
+    'said',
+    'put',
+    'told'];
 
 let verbs_3_form = [
     'beaten',
     'become',
     'begun',
     'bent',
-    'bound']
+    'bound',
+    'broken',
+    'bought',
+    'come',
+    'cost',
+    'cut',
+    'done',
+    'drunk',
+    'driven',
+    'eaten',
+    'fallen',
+    'fed',
+    'taken',
+    'said',
+    'put',
+    'told']
 
 
 jQuery('document').ready(function(){
