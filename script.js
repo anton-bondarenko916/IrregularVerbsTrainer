@@ -68,7 +68,7 @@ let verbs_3_form = [
 jQuery('document').ready(function(){
     var right_answers = 0;
     var question_num = 0;
-    var n = 5;
+    var n = 20;
     var i = 0;
     var control = 0;
     var word1 = verbs_1_form[i];
