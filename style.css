@@ -123,7 +123,7 @@
 
 .description-easy-text{
     font-family: 'Lato' sans ms;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 /*easy-verb */
@@ -139,6 +139,7 @@
     font-family: 'Lato' sans ms;
     font-size: 30px;
     font-style: italic;
+    color: ROYALBLUE;
 }
 
 
