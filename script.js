@@ -98,7 +98,11 @@ jQuery('document').ready(function(){
             if (i == n){
                 jQuery('#btn-back-id').click();
             }
-        } else if (second_form != verbs_2_form[i] || third_form != verbs_3_form[i]){
+        } else if (second_form == "" || third_form=="")
+        {
+            swal("Attention!", "Вы не ввели глагол", "warning");
+        } else if (second_form != verbs_2_form[i] || third_form != verbs_3_form[i])
+        {
             control ++;
             swal("Wrong!", `Осталось попыток: ${3-control}`, "warning");
             
@@ -116,7 +120,7 @@ jQuery('document').ready(function(){
                     jQuery('#btn-back-id').click();
                 }
             } 
-        }
+        } 
         
     })
 
