@@ -18,7 +18,8 @@ let verbs_1_form = [
     'take',
     'say',
     'put',
-    'tell'];
+    'tell',
+    'Конец!'];
 
 let verbs_2_form = [
     'beat',
