@@ -63,7 +63,6 @@
 .easy-btn:hover {
     color: white;
     background:#3498db;
-    border: 2px solid black;
 }
 .normal{
     
@@ -87,7 +86,6 @@
 .normal-btn:hover {
     color: white;
     background:#3498db;
-    border: 2px solid black;
 }
 .hard{
     height: 150px; 
@@ -108,7 +106,6 @@
 .hard-btn:hover {
     color: white;
     background:#3498db;
-    border: 2px solid black;
 }
 
 
