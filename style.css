@@ -3,8 +3,15 @@
 }
 
 /* Index.html */
+
+.page{
+    margin-top: 0px;
+    background-color:#34495e;
+    width: 100%;
+    height: 990px;
+}
 .menu{
-    margin:  auto;
+    margin:  0px auto;
     height: 450px;
     width: 55%;
     
@@ -12,7 +19,7 @@
 .level{
     text-align: center;
     color: white;
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
     font-size: 50px;
 }
 .header-container{
@@ -22,38 +29,41 @@
 }
 .header{
     font-size: 50px;
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
+    color:  white;
 }
 .description-text{
     text-align: center;
     margin-bottom: 40px;
 }
 .text{
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
     font-size: 25px;
     line-height: 1;
     font-weight: 700;
-    color: black;
+    color: white;
 }
 .easy{
     height: 150px;
     margin-bottom: 50px;
 }
 .easy-btn{
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
     width: 100%;
     height: 150px;
     font-size: 50px;
     color: white;
-    background: orange;
-    border-radius: 12px;
+    background:#34495e;
+    border-radius: 70px;
     box-shadow: none;
+    border: 4px solid #3498db;
+    cursor: pointer;
+    transition: 0.25s;
 }
 .easy-btn:hover {
-    color: black;
-    background: white;
+    color: white;
+    background:#3498db;
     border: 2px solid black;
-    box-shadow: 5px 5px;
 }
 .normal{
     
@@ -62,39 +72,43 @@
     
 }
 .normal-btn{
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
     width: 100%;
     height: 150px;
     font-size: 50px;
     color: white;
-    background: purple;
-    border-radius: 12px;
+    background:#34495e;
+    border-radius: 70px;
     box-shadow: none;
+    border: 4px solid #3498db;
+    cursor: pointer;
+    transition: 0.25s;
 }
 .normal-btn:hover {
-    color: black;
-    background: white;
+    color: white;
+    background:#3498db;
     border: 2px solid black;
-    box-shadow: 5px 5px;
 }
 .hard{
     height: 150px; 
 }
 .hard-btn{
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
     width: 100%;
     height: 150px;
     font-size: 50px;
     color: white;
-    background: #06f91e;
-    border-radius: 12px;
+    background:#34495e;
+    border-radius: 70px;
     box-shadow: none;
+    border: 4px solid #3498db;
+    cursor: pointer;
+    transition: 0.25s;
 }
 .hard-btn:hover {
-    color: black;
-    background: white;
+    color: white;
+    background:#3498db;
     border: 2px solid black;
-    box-shadow: 5px 5px;
 }
 
 
@@ -103,6 +117,9 @@
 
 /* Easy.html */
 
+.page-easy{
+    background-color: #34495e;
+}
 
 /* header */
 .header-easy{
@@ -111,7 +128,8 @@
 }
 
 .header-easy-text{
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
+    color: white;
     font-size: 50px;
 }
 
@@ -125,8 +143,9 @@
 }
 
 .description-easy-text{
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
     font-size: 24px;
+    color: white;
 }
 
 /*easy-verb */
@@ -135,14 +154,15 @@
     text-align: center;
     width: 55%;
     margin: 20px auto;
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
+    color: white;
 }
 
 .easy-verb{
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
     font-size: 30px;
     font-style: italic;
-    color: ROYALBLUE;
+    color: #fa8231;
 }
 
 
@@ -154,17 +174,28 @@
 }
 
 .input-2-form{
-    width: 55%;
+    width: 40%;
     height: 50px;
     font-size: 30px;
     text-align: center;
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
     margin-top: 10px;
+    border-radius: 30px;
+    border: 4px solid #3498db;
+    background: none;
+    color: white;
+    transition: 0.25s;
+}
+
+.input-2-form:focus{
+    width: 55%;
+    border-color: #2ecc71;
 }
 
 .input-2-form-header{
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
     font-size: 40px;
+    color: white;
 }
 
 
@@ -177,17 +208,28 @@
 }
 
 .input-3-form{
-    width: 55%;
+    width: 40%;
     height: 50px;
     font-size: 30px;
     text-align: center;
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
     margin-top: 10px;
+    border-radius: 30px;
+    border: 4px solid #3498db;
+    background: none;
+    color: white;
+    transition: 0.25s;
+}
+
+.input-3-form:focus{
+    width: 55%;
+    border-color: #2ecc71;
 }
 
 .input-3-form-header{
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
     font-size: 40px;
+    color: white;
 }
 
 
@@ -201,46 +243,49 @@
 }
 
 .btn-back{
-    width: 100%;
+    width: 300px;
     height: 50px;
-    background-color: crimson;
+    background-color: #34495e;
     box-shadow: none;
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
     color: white;
     font-size: 30px;
-    border-radius: 12px;
+    border-radius: 30px;
     text-align: center;
+    border: 4px solid #fc5c65;
+    cursor: pointer;
+    transition: 0.25s;
 }
 
 .btn-back:hover {
-    color: black;
-    background: white;
-    border: 2px solid black;
-    box-shadow: 5px 5px;
+    color: white;
+    background: #fc5c65;
+    
 }
 
 /* button check */
 .btn-check-box{
-    width: 55%;
+    width: 40%;
     margin: 10px auto;
     text-align: center;
 }
 
 .btn-check{
-    width: 100%;
+    width: 300px;
     height: 50px;
-    background-color: LIMEGREEN;
+    background-color: #34495e;
     box-shadow: none;
-    font-family: 'Lato' sans ms;
+    font-family: sans-serif;
     color: white;
     font-size: 30px;
-    border-radius: 12px;
+    border-radius: 30px;
     text-align: center;
+    border: 4px solid #2ecc71;
+    cursor: pointer;
+    transition: 0.25s;
 }
 
 .btn-check:hover {
-    color: black;
-    background: white;
-    border: 2px solid black;
-    box-shadow: 5px 5px;
+    color:white;
+    background: #2ecc71;
 }
