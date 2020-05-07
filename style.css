@@ -2,6 +2,9 @@
     margin: 0;
 }
 
+
+
+
 /* Index.html */
 
 .page{
@@ -285,4 +288,187 @@
 .btn-check:hover {
     color:white;
     background: #2ecc71;
+}
+
+
+
+
+/* Normal.html */
+
+
+.page-normal{
+    background-color:#0a3d62;
+}
+
+/* header */
+.header-normal{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header-normal-text{
+    font-family: sans-serif;
+    color: white;
+    font-size: 50px;
+}
+
+
+
+/*description */
+
+.description-normal-box{
+    margin: 20px auto;
+    text-align: center;
+    width: 55%;
+}
+
+.description-normal-text{
+    font-family: sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+
+/*easy-verb */
+
+.verb-normal-box{
+    text-align: center;
+    width: 55%;
+    margin: 20px auto;
+    font-family: sans-serif;
+    color: white;
+}
+
+.normal-verb{
+    font-family: sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    color: #fa8231;
+}
+
+
+
+/* input 1st form */
+
+.input-form-1-box-normal{
+    margin: 20px auto;
+    text-align: center;
+}
+
+.input-1-form-normal{
+    width: 40%;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: 4px solid #8c7ae6;
+    background: none;
+    color: white;
+    transition: 0.25s;
+}
+
+.input-1-form-normal:focus{
+    width: 55%;
+    border-color: #e1b12c;
+}
+
+.input-1-form-header-normal{
+    font-family: sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+
+
+/* input 3rd form */
+
+.input-form-2-box-normal{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.input-2-form-normal{
+    width: 40%;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: 4px solid #8c7ae6;
+    background: none;
+    color: white;
+    transition: 0.25s;
+}
+
+.input-2-form-normal:focus{
+    width: 55%;
+    border-color: #e1b12c;
+}
+
+.input-2-form-header-normal{
+    font-family: sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+
+
+/* buttons */
+/* button 'back to menu' */
+
+.btn-back-box-normal{
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+
+.btn-back-normal{
+    width: 300px;
+    height: 50px;
+    background-color: #0a3d62;
+    box-shadow: none;
+    font-family: sans-serif;
+    color: white;
+    font-size: 30px;
+    border-radius: 30px;
+    text-align: center;
+    border: 4px solid #d63031;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn-back-normal:hover {
+    color: white;
+    background: #d63031;
+    
+}
+
+/* button check */
+.btn-check-box-normal{
+    width: 40%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.btn-check-normal{
+    width: 300px;
+    height: 50px;
+    background-color: #0a3d62;
+    box-shadow: none;
+    font-family: sans-serif;
+    color: white;
+    font-size: 30px;
+    border-radius: 30px;
+    text-align: center;
+    border: 4px solid #00b894;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn-check-normal:hover {
+    color:white;
+    background: #00b894;
 }
