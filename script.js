@@ -66,65 +66,101 @@ let verbs_3_form = [
     'told']
 
 
-jQuery('document').ready(function(){
-    var right_answers = 0;
-    var question_num = 0;
-    var n = 20;
-    var i = 0;
-    var control = 0;
-    var word1 = verbs_1_form[i];
-    var p = document.getElementsByClassName('easy-verb')[0];
-    p.innerHTML = word1;
 
-    $('#btn-check-id').on('click',function(){
-        var second_form, third_form;
-        
-        
-        second_form = $('#input-2-form-id').val();
-        second_form = $.trim(second_form);
-        third_form = $('#input-3-form-id').val();
-        third_form = $.trim(third_form);
+$('document').ready(function(){
+
+
+
+    //functions
+    function nextVerb(){
+        i++;
+        word1 = verbs_1_form[i];
+        p = document.getElementsByClassName('easy-verb')[0];
+        p.innerHTML = word1;
+    }
+
+
+    function zeroingOfInputs(){
+        $('#input-2-form-id').val('');
+        $('#input-3-form-id').val('');
+    }
+
+
+    function verbProcessing(form){
+        form = $.trim(form);
+        form = form.toLowerCase();
+        return form;
+    }
+
+
+    function checkAnswer(second_form, third_form){
         if (second_form == verbs_2_form[i] && third_form == verbs_3_form[i]){
             right_answers ++;
             question_num ++;
-            swal("Good job!", " ", "success");
-            jQuery('#input-2-form-id').val('');
-            jQuery('#input-3-form-id').val('');
-            i++;
-            word1 = verbs_1_form[i];
-            p = document.getElementsByClassName('easy-verb')[0];
-            p.innerHTML = word1;
+            zeroingOfInputs();
+            nextVerb();
             control = 0;
             if (i == n){
-                jQuery('#btn-back-id').click();
+                $('#btn-back-id').click();
             }
+            return 0;
         } else if (second_form == "" || third_form=="")
         {
-            swal("Attention!", "Вы не ввели глагол", "warning");
+            return 1 ;
         } else if (second_form != verbs_2_form[i] || third_form != verbs_3_form[i])
         {
             control ++;
-            swal("Wrong!", `Осталось попыток: ${3-control}`, "warning");
-            
             if (control == 3){
                 question_num ++;
-                jQuery('#input-2-form-id').val('');
-                jQuery('#input-3-form-id').val('');
-                swal("Bad!","Вы не справились с данным глаголом", "error");
+                zeroingOfInputs();
                 control = 0;
-                i++;
-                word1 = verbs_1_form[i];
-                p = document.getElementsByClassName('easy-verb')[0];
-                p.innerHTML = word1;
+                nextVerb();
                 if (i == n){
-                    jQuery('#btn-back-id').click();
+                    $('#btn-back-id').click();
                 }
+                return 2;
             } 
+            return 3;
         } 
+    }
+
+        var right_answers = 0;
+        var question_num = 0;
+        var n = 20;
+        var i = 0;
+        var l;
+        var control = 0;
+        var word1 = verbs_1_form[i];
+        var p = document.getElementsByClassName('easy-verb')[0];
+        p.innerHTML = word1;
+    
+
+    $('#btn-check-id').on('click',function(){
+        var second_form, third_form;
+        second_form = $('#input-2-form-id').val();
+        second_form = verbProcessing(second_form);
+        third_form = $('#input-3-form-id').val();
+        third_form = verbProcessing(third_form);
+        l = checkAnswer(second_form, third_form);
+        switch(l){
+            case 0:
+                swal("Good job!", " ", "success");
+                break;
+            case 1:
+                swal("Attention!", "Вы не ввели глагол", "warning");
+                break;
+            case 2:
+                swal("Bad!","Вы не справились с данным глаголом", "error");
+                break;
+            case 3:
+                swal("Wrong!", `Осталось попыток: ${3-control}`, "warning");
+                break;
+                
+        }
         
     })
 
-    jQuery('#btn-back-id').on('click',function(){
+    $('#btn-back-id').on('click',function(){
         var mark;
         mark = right_answers / question_num;
         mark = (mark*10)/2;
@@ -145,4 +181,4 @@ jQuery('document').ready(function(){
     })
     
 
-});
+})

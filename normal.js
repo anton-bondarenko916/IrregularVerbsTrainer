@@ -6,6 +6,22 @@ let verbs_1_form_normal = [
     'give',
     'hide',
     'lie',
+    'bring',
+    'choose',
+    'cut',
+    'draw',
+    'upset',
+    'mistake',
+    'light',
+    'meet',
+    'build',
+    'burn',
+    'catch',
+    'dream',
+    'feel',
+    'fight',
+    'go',
+    'let'
 ];
 
 let verbs_2_form_normal = [
@@ -13,7 +29,23 @@ let verbs_2_form_normal = [
     'flew',
     'gave',
     'hid',
-    'lay'
+    'lay',
+    'brought',
+    'chose',
+    'cut',
+    'drew',
+    'upset',
+    'mistook',
+    'lit',
+    'met',
+    'built',
+    'burnt',
+    'caught',
+    'dreamt',
+    'felt',
+    'fought',
+    'went',
+    'let'
 ];
 
 let verbs_3_form_normal = [
@@ -22,6 +54,22 @@ let verbs_3_form_normal = [
     'given',
     'hidden',
     'lain',
+    'brought',
+    'chosen',
+    'cut',
+    'drown',
+    'upset',
+    'mistaken',
+    'lit',
+    'met',
+    'built',
+    'burnt',
+    'caught',
+    'dreamt',
+    'felt',
+    'fought',
+    'gone',
+    'let',
     'Конец!'
 ];
 
@@ -32,7 +80,7 @@ let verbs_3_form_normal = [
   //for all
     var right_answers = 0;
     var question_num = 0;
-    var n = 5;
+    var n = 20;
     var i = 0;
     var control = 0;
 
@@ -47,8 +95,10 @@ let verbs_3_form_normal = [
         
         first_form = $('.input-1-form-normal').val();
         first_form = $.trim(first_form);
+        first_form = first_form.toLowerCase();
         second_form = $('.input-2-form-normal').val();
         second_form = $.trim(second_form);
+        second_form = second_form.toLowerCase();
         if (first_form == verbs_1_form_normal[i] && second_form == verbs_2_form_normal[i]){
             right_answers ++;
             question_num ++;
